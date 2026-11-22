@@ -2,22 +2,18 @@
 
 int main()
 {
+  int table[10], n;
+  printf("enter a number  :");
+  scanf("%d", n);
+  for (int i = 1; i < 10; i++)
+  {
 
-    int a, b, c;
-    printf("enter number  ");
-    scanf("%d", &a);
-    printf("enter number  ");
-    scanf("%d", &b);
-    printf("enter number  ");
-    scanf("%d", &c);
 
-    if (a >= b && a >= c)
-    {
+    table[i]= n * i;
+    printf("5 x %d = %d\n" , i, table[i]);
 
-        printf("%d is the greatest", a);
-    }
-    else
-        printf("maa chuda");
 
-    return 0;
+  }
+
+  return 0;
 }
